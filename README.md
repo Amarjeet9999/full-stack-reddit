@@ -54,11 +54,11 @@ Sarvesh Kumar Sharma
   <li>Change directory to full-stack-reddit/backend by running </li>
   <code>cd full-stack-reddit/backend</code>
   <li>And then run the following commands</li>
-  <li><code>npm install</code></li>
-  <li><code>npm run server</code></li>
+  <code>npm install</code>
+  <code>npm run server</code>
   <li>Change directory to full-stack-reddit/frontend by running </li>
   <code>cd full-stack-reddit/frontend</code>
   <li>And then run the following commands</li>
-  <li><code>npm install</code></li>
-  <li><code>npm start</code></li>
+  <code>npm install</code>
+  <code>npm start</code>
   </ul>
