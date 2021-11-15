@@ -1,0 +1,7 @@
+.main-bar {
+  flex: 0.65;
+  width: 40vh;
+  height: 40vh;
+  border: 1px solid black;
+  margin-top: 100px;
+}
