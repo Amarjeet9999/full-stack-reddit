@@ -1,0 +1,343 @@
+body {
+  background-color: #dae0e6;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.left {
+  width: 750px;
+}
+
+.formDiv {
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 70vh;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.optBtn {
+  /* padding: 5px; */
+
+  flex: 0.25;
+  border: 1px solid lightgray;
+}
+
+.options {
+  width: 100%;
+  height: 5vh;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.khaskhsakhas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spantext {
+  color: #878a8c;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* padding-left: 5px;
+  margin-bottom: 20px; */
+  margin-left: 10px;
+}
+
+.textinput {
+  width: 100%;
+  height: 5vh;
+  /* border: 1px solid black; */
+  margin-top: 5px;
+}
+
+.textareafirst {
+  width: 93%;
+  height: 4vh;
+  padding: 5px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.textinputbigbox {
+  width: 100%;
+  height: 20vh;
+
+  /* border: 1px solid black; */
+}
+
+.textareasecond {
+  width: 93%;
+  height: 19vh;
+  padding: 5px;
+  overflow: hidden;
+  border: 1px solid rgb(219, 216, 216);
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.otherstuffunder {
+  width: 93%;
+  height: 5vh;
+  margin-left: 20px;
+  display: flex;
+  overflow: hidden;
+  /* border: 1px solid black; */
+  background-color: #f6f7f8;
+  gap: 20px;
+}
+
+.otherstuffunderextra {
+  width: 100%;
+  height: 4.5vh;
+  display: flex;
+  flex: 0.25;
+  justify-content: space-evenly;
+  text-align: start;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  padding: 3.5px;
+  margin-top: 5px;
+}
+
+.otherstuffunderextratwo {
+  width: 100%;
+  height: 4.5vh;
+  display: flex;
+  flex: 0.15;
+  justify-content: space-evenly;
+  text-align: start;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  padding: 3.5px;
+  margin-top: 5px;
+}
+
+.otherstuffunderextrathree {
+  width: 100%;
+  height: 4.5vh;
+  display: flex;
+  flex: 0.2;
+  padding: 3.5px;
+  justify-content: space-evenly;
+  text-align: start;
+  /* border: 1px solid black; */
+  cursor: pointer;
+  margin-top: 5px;
+}
+.otherstuffunderextra > svg {
+  color: gray;
+}
+
+.otherstuffunderextratwo > svg {
+  color: gray;
+}
+
+.otherstuffunderextrathree > svg {
+  color: gray;
+}
+
+.postcommunity {
+  width: 100%;
+  height: 10vh;
+  /* border: 1px solid black; */
+  margin-top: 40px;
+}
+
+.postcommunityunderdiv {
+  width: 95%;
+  height: 9vh;
+  /* border: 1px solid black; */
+
+  padding: 5px;
+  margin-left: 18px;
+}
+
+.postname {
+  display: flex;
+  justify-content: left;
+}
+
+.postcommunityunderdivextra {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  display: flex;
+  height: 5vh;
+}
+
+.inputtag {
+  border: none;
+  outline: none;
+
+  padding: 5px;
+  color: black;
+}
+
+.ashjahajshgas {
+  justify-content: right;
+  padding: 5px;
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > input {
+  color: black;
+}
+
+.ashjahajshgas > svg {
+  color: gray;
+}
+
+.searchiconcolor {
+  color: grey;
+  margin-top: 2px;
+}
+
+.othercommunities {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 10vh;
+}
+
+.othercommunitiessaassasa {
+  /* border: 1px solid black; */
+  width: 95%;
+  display: flex;
+
+  height: 9vh;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.otherstuffasaasaasasasss {
+  flex: 0.35;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 12px;
+}
+
+.roundcircle {
+  width: 110px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.strongssss {
+  color: grey;
+  /* margin: 0; */
+  margin-top: 1.5px;
+}
+
+.buttonupload {
+  background: white;
+  color: blue;
+  border-radius: 10px;
+  border: 1px solid blue;
+}
+
+.roundcircle > svg {
+  color: lightgray;
+}
+
+.finalcommunity {
+  width: 100%;
+  height: 8vh;
+  /* border: 1px solid black; */
+}
+
+.finalcommunityunder {
+  width: 95%;
+  height: 7vh;
+  /* border: 1px solid black; */
+  margin-left: 20px;
+  display: flex;
+}
+
+.pixelgiven {
+  flex: 0.35;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.roundcirclesecond {
+  width: 100px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.strongssssffff {
+  border: none;
+  background-color: white;
+  color: grey;
+  margin-left: 10px;
+}
+
+.strongssssffffss {
+  border: none;
+  background-color: white;
+  color: grey;
+  /* margin-left: 5px; */
+}
+
+.roundcirclesecondbutton {
+  width: 130px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 40px;
+  display: flex;
+
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.imageupload {
+  width: 100%;
+  height: 5vh;
+}
+
+.imageuploadunder {
+  width: 94%;
+  margin-left: 21px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  height: 7vh;
+  padding: 5px;
+}
+
+.imageuploadundertext {
+  color: black;
+  font-size: 18px;
+}
+
+.assasasasa {
+  border: 1px solid blue;
+  border-radius: 4px;
+  width: 10px;
+}
