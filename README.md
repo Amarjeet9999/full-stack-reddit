@@ -19,101 +19,46 @@
 <h1>Libraries and Tools used</h1>
 <ul>
 <li>MongoAtlas</li>
-<li>Express</li>
-<li>MongoDB</li>
   <li>mongoose</li>
+<li>Express</li>
+  <li>multer/firebase</li>
+  <li>MaterialUI</li>
+  <li>Styled Components</li>
   </ul>
+  
 <h1>Features built</h1>
+<ul>
+<li>Login/signup with backend authentication</li>
+  <li>Add new post to feed</li>
+   <li>Upvote/downvote any post</li>
+   <li>See and write comments to any post</li>
+  </ul>
 
 <h1>Team Members</h1>
 <ul>
-  <li>
+  <li><a href="https://github.com/HardikThummar97">Hardik Thummar</a></li>
+  <li><a href="https://github.com/Amarjeet9999">Amarjeet Kumar</a></li>
+  <li><a href="https://github.com/Vipul4439">Vipul Soni</a></li>
+  <li><a href="https://github.com/SARVESHSHARMA-SKS">
 Sarvesh Kumar Sharma
-  </li>
-   <li>Nitish Kumar</li>
-  
-  <li> Chandupatla Naga Pavan Kumar</li>
-  <li>Hema Shyamala R</li>
+  </a></li>
+<!--   <li><a href="">Anurag</a></li> -->
  
  
   </ul>
 <h1>How to use our app?</h1>
 <ul>
   <li>Install git on your machine</li>
-  <li>Clone our repository by running the command git clone
-
-  <li>Change directory to MakeMyTrip by running cd MakeMyTrip</li>
+  <li>Clone our repository by running the command </li>
+  <code>git clone https://github.com/Amarjeet9999/full-stack-reddit.git</code>
+  <li>Change directory to full-stack-reddit/backend by running </li>
+  <code>cd full-stack-reddit/backend</code>
   <li>And then run the following commands</li>
-  <li>npm install</li>
-  <li>npm start</li>
+  <li><code>npm install</code></li>
+  <li><code>npm run server</code></li>
+  <li>Change directory to full-stack-reddit/frontend by running </li>
+  <code>cd full-stack-reddit/frontend</code>
+  <li>And then run the following commands</li>
+  <li><code>npm install</code></li>
+  <li><code>npm start</code></li>
   </ul>
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
