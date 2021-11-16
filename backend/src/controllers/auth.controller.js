@@ -29,7 +29,7 @@ const register = async (req, res) => {
     // Create a token
 
     const token = newToken(user);
-    req.headers.auth = token;
+    // req.headers.auth = token;
     // Then we need to return the token and the user information in the frontend
 
     return res.status(201).json({ user, token });

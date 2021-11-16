@@ -17,9 +17,8 @@ export const FeedPosts = () => {
 
   const getPosts = async () => {
     await axios
-      .get("http://localhost:5000/posts")
+      .get("http://localhost:8000/posts")
       .then((res) => {
-        console.log(res.data.posts);
         setPosts([...res.data.posts]);
       })
       .catch((err) => {
@@ -36,7 +35,7 @@ export const FeedPosts = () => {
 
   const handleVotes = async (id, val) => {
     await axios
-      .patch(`http://localhost:5000/posts/${id}/vote`, { val })
+      .patch(`http://localhost:8000/posts/${id}/vote`, { val })
       .then((res) => {
         getPosts();
       })
@@ -64,9 +63,11 @@ export const FeedPosts = () => {
             {/* <img src={post.subreddit.image_src} alt="" /> */}
             <span className="subreddit-name">r/{post.community}</span>
             <span className="post-user">Posted by</span>
+
             <span className="post-user underline">
               u/{post.postedBy.username}
             </span>
+
             <div className="spacer"></div>
             <Button label="+ JOIN" />
           </div>
@@ -77,9 +78,7 @@ export const FeedPosts = () => {
             >
               {post.title}
             </span>
-            {post.video_src && (
-              <Video src={post.video_src} duration={post.duration} />
-            )}
+
             {post.img && <img src={post.img} alt="posiImage" />}
             {post.text && <span className="description">{post.text}</span>}
           </div>

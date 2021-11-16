@@ -29,10 +29,8 @@ const PostForm = () => {
   const [image, setImage] = useState(null);
   const [state, setState] = useState(false);
   const [url, setUrl] = useState("");
-  console.log("url:", url);
 
   const userId = useSelector((state) => state.auth.user._id);
-  console.log(userId);
   const token = useSelector((state) => state.auth.token);
   // console.log("userId:", userId);
 
@@ -98,7 +96,7 @@ const PostForm = () => {
     };
 
     axios
-      .post("http://localhost:8000/posts", payload, config)
+      .post("https://reddit-backendwork.herokuapp.com/posts", payload, config)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
     // setTimeout(() => {

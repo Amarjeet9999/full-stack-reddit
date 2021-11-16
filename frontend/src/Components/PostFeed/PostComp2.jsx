@@ -37,10 +37,8 @@ export const PostComp2 = ({ post, index, rm, handleVotes }) => {
         >
           {post.title}
         </span>
-        {post.video && (
-          <Video src={post.video} duration={post?.duration} />
-        )}
-        {post.img && <img src={post?.img} />}
+
+        {post.img && <img src={post?.img} alt="" />}
         {post.description && (
           <span className="description">{post?.description}</span>
         )}

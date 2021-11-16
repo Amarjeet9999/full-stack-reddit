@@ -7,7 +7,6 @@ import ModeCommentIcon from "@material-ui/icons/ModeComment";
 import ShareIcon from "@material-ui/icons/Share";
 import BookmarkIcon from "@material-ui/icons/Bookmark";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-import Video from "./Video/Video";
 import { useHistory } from "react-router-dom";
 
 export const PostComp = ({ post, index, rm }) => {
@@ -34,10 +33,8 @@ export const PostComp = ({ post, index, rm }) => {
         >
           {post.title}
         </span>
-        {post.video_src && (
-          <Video src={post.video_src} duration={post.duration} />
-        )}
-        {post.image_src && <img src={post.image_src} />}
+
+        {post.image_src && <img src={post.image_src} alt="" />}
         {post.description && (
           <span className="description">{post.description}</span>
         )}

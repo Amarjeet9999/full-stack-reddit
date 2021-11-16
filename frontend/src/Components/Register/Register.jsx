@@ -15,7 +15,7 @@ export const Register = () => {
   const handleLogin = async () => {
     try {
       await axios
-        .post("http://localhost:5000/register", {
+        .post("http://localhost:8000/register", {
           email: email,
           password: password,
           username: username,

@@ -22,8 +22,9 @@ export const Form = () => {
   const handleLogin = async () => {
     try {
       dispatch(loginLoading());
+      console.log(email, password);
       await axios
-        .post("http://localhost:5000/login", {
+        .post("http://localhost:8000/login", {
           email: email,
           password: password,
         })

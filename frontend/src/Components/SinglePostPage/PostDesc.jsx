@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 export const PostDesc = ({ fetchData, handleVotes, singlePost }) => {
   // console.log("singlePost:", singlePost._id);
   const [comments, setComments] = useState([]);
-  console.log("comments:", comments);
 
   const { setShow } = React.useContext(ShowContext);
   const { auth } = useSelector((state) => state.auth);
