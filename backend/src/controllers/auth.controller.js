@@ -1,10 +1,16 @@
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
+const axios = require("axios").default;
+const bcrypt = require("bcryptjs");
 
 const User = require("../models/user.model");
 
 const newToken = (user) => {
   return jwt.sign({ user: user }, process.env.JWT_SECRET_KEY);
+};
+
+const checkPass = (given, real) => {
+  return bcrypt.compareSync(given, real);
 };
 
 // Registeration
@@ -73,4 +79,33 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { register, login };
+const loginForDeploy = async (req, res) => {
+  try {
+    const { password, email } = req.body;
+    let data = {};
+    await axios
+      .get("https://reddit-backends.herokuapp.com/users")
+      .then(function (res) {
+        let checked = checkUsers(res.data.data, email, password);
+        data = checked;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    return res.status(201).json({ user: data.user, token: data.token });
+  } catch (err) {
+    return res.status(500).json({ err });
+  }
+};
+
+const checkUsers = (users, email, pass) => {
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].email === email && checkPass(pass, users[i].password)) {
+      const token = newToken(users[i]);
+      return { user: users[i], token: token };
+    }
+  }
+  return false;
+};
+
+module.exports = { register, login, loginForDeploy };

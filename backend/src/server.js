@@ -8,8 +8,12 @@ app.use(cors());
 app.use(express.json());
 
 // Controllers
-const { register, login } = require("./controllers/auth.controller");
-app.use("/login", login);
+const {
+  register,
+  login,
+  loginForDeploy,
+} = require("./controllers/auth.controller");
+app.use("/login", loginForDeploy);
 app.use("/register", register);
 
 const postController = require("./controllers/post.controller");
@@ -19,9 +23,9 @@ const commentController = require("./controllers/comment.controller");
 app.use("/comments", commentController);
 
 const userController = require("./controllers/user.controller");
-app.use("/users", userController);
+app.use("/users.json", userController);
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, async () => {
   try {
