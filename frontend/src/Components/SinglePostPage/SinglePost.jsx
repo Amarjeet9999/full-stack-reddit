@@ -20,7 +20,7 @@ export const SinglePostData = () => {
 
   const handleVotes = async (val) => {
     await axios
-      .patch(`https://reddit-backendwork.herokuapp.com/posts/${id}/vote`, {
+      .patch(`http://localhost:8000/posts/${id}/vote`, {
         val,
       })
       .then((res) => {

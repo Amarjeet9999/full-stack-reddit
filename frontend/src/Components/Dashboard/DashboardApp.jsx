@@ -40,15 +40,16 @@ const MainDiv = styled.div`
   justify-content: center;
   margin: 0 auto;
   margin-top: ${(props) => (props.post ? "30px" : 0)};
+  max-width: 1020px;
 `;
 
 const First = styled.div`
-  width: 660px;
+  width: 685px;
 `;
 
 const Second = styled.div`
   margin-left: 24px;
   margin-top: 0;
   flex: 0 0 312px;
-  width: 312px;
+  width: 310px;
 `;

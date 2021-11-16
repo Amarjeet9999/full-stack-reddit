@@ -84,7 +84,7 @@ const loginForDeploy = async (req, res) => {
     const { password, email } = req.body;
     let data = {};
     await axios
-      .get("https://reddit-backends.herokuapp.com/users")
+      .get("https://reddit-backendwork.herokuapp.com/users.json")
       .then(function (res) {
         let checked = checkUsers(res.data.data, email, password);
         data = checked;

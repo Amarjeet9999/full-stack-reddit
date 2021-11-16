@@ -13,7 +13,7 @@ const {
   login,
   loginForDeploy,
 } = require("./controllers/auth.controller");
-app.use("/login", loginForDeploy);
+app.use("/login", login);
 app.use("/register", register);
 
 const postController = require("./controllers/post.controller");
@@ -25,7 +25,7 @@ app.use("/comments", commentController);
 const userController = require("./controllers/user.controller");
 app.use("/users.json", userController);
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8000;
 
 app.listen(PORT, async () => {
   try {

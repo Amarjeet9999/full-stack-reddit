@@ -33,9 +33,9 @@ export const AuthDropDown = ({ data }) => {
         </div>
 
         <div className="userName">
-          <b>{user.username}</b>
+          <b className="firstB">{user.username}</b>
           <br />
-          <span>1 karma</span>
+          <b className="nextB">1 karma</b>
         </div>
         <div className="forEmpty"></div>
         <div className="profile">
@@ -102,9 +102,12 @@ const MainAction = styled.div`
   justify-content: space-between;
   flex-direction: row;
   border: 1px solid transparent;
+  margin: 0 10px;
+  padding: 0px 2px;
 
   &:hover {
-    border: 1px solid grey;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
   }
   & .forEmpty {
     width: 150px;
@@ -146,14 +149,22 @@ const MainAction = styled.div`
   }
 
   & .userName {
-    max-height: 100%;
-    & b {
-      color: black;
+    max-height: 35px;
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    & .firstB {
+      color: #4d4a4a;
       font-size: 13px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
-    & span {
+    & .nextB {
       font-weight: 600;
-      font-size: 12px;
+      font-size: 10px;
+      color: #4d4a4a;
+      margin-top: 0;
+      padding: 0;
     }
   }
 `;

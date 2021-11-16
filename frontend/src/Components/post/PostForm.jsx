@@ -96,7 +96,7 @@ const PostForm = () => {
     };
 
     axios
-      .post("https://reddit-backendwork.herokuapp.com/posts", payload, config)
+      .post("http://localhost:8000/posts", payload, config)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
     // setTimeout(() => {

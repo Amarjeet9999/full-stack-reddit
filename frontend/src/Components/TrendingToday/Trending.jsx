@@ -86,7 +86,7 @@ export const TrendingToday = () => {
 
 const MainDiv = styled.div`
   height: auto;
-  width: 75%;
+  max-width: 1020px;
   margin: auto;
   margin-top: 10px;
   & .title {

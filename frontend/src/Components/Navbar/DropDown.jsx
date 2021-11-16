@@ -60,8 +60,8 @@ export const DropDown = ({ data }) => {
 const MainDiv = styled.div`
   border: 2px solid red;
   position: fixed;
-  left: 1153px;
-  top: 39.5px;
+  right: 0;
+  top: 41.5px;
   border-radius: 0 0 4px 4px;
   border: 1px solid grey;
   border-top: none;

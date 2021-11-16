@@ -43,10 +43,10 @@ export const NavbarAuth = () => {
       <Searchbar />
       <Options>
         <div>
-          <span className="material-icons">videocam</span>
+          <span class="material-icons">dashboard_customize</span>
         </div>
         <div>
-          <span className="material-icons">videocam</span>
+          <span class="material-icons">trending_up</span>
         </div>
         <div>
           <span className="material-icons third">videocam</span>
@@ -96,18 +96,18 @@ const MainAction = styled.div`
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  border: 1px solid transparent;
+  margin: 0 10px;
+  padding: 5px 2px;
 
   &:hover {
-    border: 1px solid grey;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
   }
 
   & .profile {
     border: 1px solid transparent;
     margin-left: 140px;
-  }
-
-  & .profile:hover {
-    border: 1px solid rgb(230, 230, 230);
   }
   & .profile svg {
     margin-right: 8px;
@@ -122,11 +122,12 @@ const Options = styled.div`
   width: 200px;
   display: flex;
   width: 328px;
-  padding: 0 12px;
+  padding: 10px 12px;
+  max-height: 48px;
   justify-content: space-evenly;
 
   & .material-icons {
-    color: #5c5353;
+    color: #727070;
     cursor: pointer;
   }
   & .third {
@@ -134,6 +135,7 @@ const Options = styled.div`
   }
   & .fourth {
     border-left: 1px solid grey;
+    padding: 0 5px;
   }
   & .coin {
     background-color: rgb(255, 234, 90);
