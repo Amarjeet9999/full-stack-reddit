@@ -1,4 +1,4 @@
-<h1>Reddit Clone</h1>
+<h1>Reddit Clone (Educational Purpose)</h1>
 <h3>
   Reddit is an American social news aggregation, web content rating, and discussion website
   <p></p>
